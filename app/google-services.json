@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "204156595954",
+    "firebase_url": "https://landt1907-fcm.firebaseio.com",
+    "project_id": "landt1907-fcm",
+    "storage_bucket": "landt1907-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204156595954:android:935ff3a6b1902a2de0ea6b",
+        "android_client_info": {
+          "package_name": "com.nor.fmc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204156595954-hbku0imlcfrhbetm63e6uschtud4qlnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqO6kFMAyqFpNeqOo0_5R6j74riaoSLDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204156595954-hbku0imlcfrhbetm63e6uschtud4qlnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
