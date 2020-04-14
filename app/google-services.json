@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "204156595954",
-    "firebase_url": "https://landt1907-fcm.firebaseio.com",
-    "project_id": "landt1907-fcm",
-    "storage_bucket": "landt1907-fcm.appspot.com"
+    "project_number": "848238901950",
+    "firebase_url": "https://land1907-fcm.firebaseio.com",
+    "project_id": "land1907-fcm",
+    "storage_bucket": "land1907-fcm.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:204156595954:android:935ff3a6b1902a2de0ea6b",
+        "mobilesdk_app_id": "1:848238901950:android:fc2881fa55552515e83cef",
         "android_client_info": {
-          "package_name": "com.nor.fmc"
+          "package_name": "com.ddhuy4298.fcm"
         }
       },
       "oauth_client": [
         {
-          "client_id": "204156595954-hbku0imlcfrhbetm63e6uschtud4qlnn.apps.googleusercontent.com",
+          "client_id": "848238901950-98ovjsenvomf914h9emr3handpqbhk7s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAqO6kFMAyqFpNeqOo0_5R6j74riaoSLDk"
+          "current_key": "AIzaSyARyjokQWc6taiHgpgrmo6Ms2XviL6CdJI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "204156595954-hbku0imlcfrhbetm63e6uschtud4qlnn.apps.googleusercontent.com",
+              "client_id": "848238901950-98ovjsenvomf914h9emr3handpqbhk7s.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

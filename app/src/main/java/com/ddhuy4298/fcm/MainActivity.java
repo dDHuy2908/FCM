@@ -2,6 +2,7 @@ package com.ddhuy4298.fcm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.NotificationManager;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,7 +16,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        manager.cancel(4298);
+
         setContentView(R.layout.activity_main);
+
         FirebaseInstanceId.getInstance()
                 .getInstanceId().addOnSuccessListener(new OnSuccessListener<InstanceIdResult>() {
                     @Override

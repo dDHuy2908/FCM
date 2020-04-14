@@ -2,6 +2,8 @@ package com.ddhuy4298.fcm;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -35,8 +37,8 @@ public class FCMService extends FirebaseMessagingService {
             );
             manager.createNotificationChannel(channel);
         }
-        String title = remoteMessage.getNotification().getTitle();
-        String text = remoteMessage.getNotification().getBody();
+        String title = remoteMessage.getData().get("title");
+        String text = remoteMessage.getData().get("body");
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(
                 this, channelId
@@ -44,8 +46,13 @@ public class FCMService extends FirebaseMessagingService {
         notification.setContentTitle(title);
         notification.setContentText(text);
         notification.setSmallIcon(R.mipmap.ic_launcher);
-        if (remoteMessage.getNotification().getImageUrl() != null) {
-            String image = remoteMessage.getNotification().getImageUrl().toString();
+
+        Intent intent = new Intent(this, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+        notification.setContentIntent(pendingIntent);
+
+        if (remoteMessage.getData().containsKey("image")) {
+            String image = remoteMessage.getData().get("image");
             try {
                 URL url = new URL(image);
                 URLConnection connection = url.openConnection();
